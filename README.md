@@ -1,16 +1,26 @@
-# Projeto 3 - Microsserviços com Docker
+# Projeto 3 - Provisionamento com Docker
 
-Este projeto demonstra como criar um container Docker que serve uma aplicação web simples utilizando Nginx.
+Este projeto realiza o provisionamento automático de um servidor web utilizando Docker e Docker Compose.
 
-## Pré-requisitos
+## Requisitos
 
-- Docker instalado
-- Docker Compose instalado
-- Git (opcional)
+- Linux Ubuntu
+- Docker
+- Docker Compose
 
-## Como executar
+## Etapas
+
+1. Clone o repositório ou baixe o .zip
+2. Dê permissão de execução para o script:
 
 ```bash
-git clone https://github.com/seu-usuario/linux-projeto3-iac-docker.git
-cd linux-projeto3-iac-docker
-docker-compose up --build
+chmod +x provisionamento.sh
+```
+
+3. Execute o script:
+
+```bash
+./provisionamento.sh
+```
+
+Isso instalará o Docker, iniciará o serviço e criará um container com NGINX rodando na porta 80.
